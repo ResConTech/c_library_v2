@@ -6677,6 +6677,20 @@
       <field type="uint8_t" name="ind">index of debug variable</field>
       <field type="float" name="value">DEBUG value</field>
     </message>
+    <message id="255" name="ACTUATOR_MOTORS">
+      <description>Thrust levels of motors</description>
+      <field type="uint32_t" name="time_boot_ms" units="ms">Timestamp (time since system boot).</field>
+      <field type="float" name="thrust_1_raw" >Thrust 1</field>
+      <field type="float" name="thrust_2_raw" >Thrust 2</field>
+      <field type="float" name="thrust_3_raw" >Thrust 3</field>
+      <field type="float" name="thrust_4_raw" >Thrust 4</field>
+      <field type="float" name="thrust_5_raw" >Thrust 5</field>
+      <field type="float" name="thrust_6_raw" >Thrust 6</field>
+      <field type="float" name="thrust_7_raw" >Thrust 7</field>
+      <field type="float" name="thrust_8_raw" >Thrust 8</field>
+      <field type="uint8_t" name="num" >Number of motors</field>
+    </message>
+  
     <!-- messages with ID 256 and above are only available in MAVLink2 -->
     <message id="256" name="SETUP_SIGNING">
       <description>Setup a MAVLink2 signing key. If called with secret_key of all zero and zero initial_timestamp will disable signing</description>
